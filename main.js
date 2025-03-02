@@ -33,7 +33,7 @@ const allBtn = document.getElementsByClassName('bg-blue-600')
    commentBox.appendChild(pTag)
 
     event.target.disabled = true;
-    event.target.style.backgroundColor = "#7e7ee5";
+    event.target.style.backgroundColor = "#d7d7dc";
 
       })
      
