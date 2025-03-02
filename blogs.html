@@ -26,19 +26,60 @@
             <h2 class="text-xl my-5 font-bold text-center">Blogs</h2>
             <div class="bg-white  space-y-4 rounded-lg my-8">
                 <h3 class="border-b border-dotted p-4 font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</h3>
-                <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt tempora cum aut nemo, pariatur perspiciatis hic nostrum fugiat aperiam. Blanditiis autem id totam quam non libero, impedit odit pariatur.</p>
+                <p class="p-4">অনেকগুলো উপায়ে Dom Element কে সিলেক্ট করা যায়। প্রথমে এলিমেন্ট টা খুঁজে বের করতে হবে।
+
+                    Finding HTML elements by id
+                    Finding HTML elements by tag name
+                    Finding HTML elements by class name
+                    Finding HTML elements by CSS selectors
+                    Finding HTML elements by HTML object collections
+                    
+                    এরপরে সেগুলো কে id , className, tagName অথবা অবজেক্ট নেইম (username ) ইত্যাদি এগুলো দিয়ে সিলেক্ট করা যায়</p>
             </div>
             <div class="bg-white  space-y-4 rounded-lg my-8">
-                <h3 class="border-b border-dotted p-4 font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</h3>
-                <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt tempora cum aut nemo, pariatur perspiciatis hic nostrum fugiat aperiam. Blanditiis autem id totam quam non libero, impedit odit pariatur.</p>
+                <h3 class="border-b border-dotted p-4 font-bold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h3>
+                <p class="p-4">InnerHTML 
+                    এটির মাধ্যমে এইচটিএমএল ট্যাগ এবং ট্যাগের মধ্যে যে টেক্সট থাকে সবগুলো এলিমেন্ট পাওয়া যায়। এবং সেগুলো পরিবর্তন করা যায় 
+                    innerText
+                    এর মাধ্যমে শুধু html ট্যাগ এর মধ্যে যে টেক্সটগুলো  থাকে সেগুলো পাওয়া যায় কিন্তু html ট্যাগ গুলো পাওয়া যায় না এবং এইচটিএমএল ট্যাগের মধ্যে থাকা  টেক্সট পরিবর্তন করে নতুন কোনো টেক্সট বসানো যায় কিন্তু পুরো html ট্যাগ কে পরিবর্তন করা যায় না।
+                    
+                    এবং কোন টেক্সট এর  display : none অথবা visibility : hidden করা থাকলে সেগুলো পাওয়া যায় না।
+
+                    texContent
+                    এটা innerText এর মতই তবে css দিয়ে যদি কোন টেক্সট  এর display: none করা থাকে visibility : hidden করা থাকে সেগুলোও পাওয়া যায়।
+                    </p>
             </div>
             <div class="bg-white  space-y-4 rounded-lg my-8">
-                <h3 class="border-b border-dotted p-4 font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</h3>
-                <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt tempora cum aut nemo, pariatur perspiciatis hic nostrum fugiat aperiam. Blanditiis autem id totam quam non libero, impedit odit pariatur.</p>
+                <h3 class="border-b border-dotted p-4 font-bold text-xl">Question-3: What is event delegation in the DOM?
+                </h3>
+                <p class="p-4">
+                    event delegation
+                    
+                    হচ্ছে জাভা স্ক্রিপ্টের এমন একটা ফিচার যার মাধ্যমে প্যারেন্ট এলিমেন্ট কে সিলেক্ট করে সেগুলোর চাইল্ড এলিমেন্ট এর মধ্যে ইভেন্ট লিসেন করা যায়।
+                    প্রতিটা চাইল্ডের জন্য আলাদা করে ইভেন্ট লিসেন এড করতে হয় না এতে  মেমোরি অনেক কম খরচ হয় এবং পারফরম্যান্স ভালো থাকে।
+                    
+                    এটা সম্ভব হয় event bubbling এর জন্য। ইভেন্ট বাবলিং হচ্ছে চাইল্ড এলিমেন্ট থেকে নিয়ে শুরু করে ধাপে ধাপে এর প্যারেন্ট এলিমেন্ট পর্যন্ত এটা চলে।
+                    
+                    </p>
             </div>
             <div class="bg-white  space-y-4 rounded-lg my-8">
-                <h3 class="border-b border-dotted p-4 font-bold text-xl">Question-1: What are the different ways to select an element in the DOM?</h3>
-                <p class="p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sunt tempora cum aut nemo, pariatur perspiciatis hic nostrum fugiat aperiam. Blanditiis autem id totam quam non libero, impedit odit pariatur.</p>
+                <h3 class="border-b border-dotted p-4 font-bold text-xl">
+                    Question-4: What is event bubbling in the DOM?
+                    </h3>
+                                <p class="p-4">event bubbling হচ্ছে এমন একটি ফিচার।
+                যেটা হচ্ছে যখন কোন চাইল্ড এলিমেন্টে ইভেন্ট ট্রিগার হয় তখন সেটা ধাপে ধাপে তার পেরেন্ট এলিমেন্টর দিকে ছড়িয়ে পরে। এতে দেখা যায় চাইল্ড এলিমেন্টে ইভেন্ট ট্রিগার হলে ইভেন্ট বাবলিং হয়ে প্যারেন্ট এলিমেন্টে ট্রিগার হয়। যদি প্যারেন্ট এলিমেন্টের কোন প্যারেন্ট থাকে সেটাতেও ট্রিগার হয় এভাবে উপরে ওঠাতে থাকে।
+                </p>
+            </div>
+            <div class="bg-white  space-y-4 rounded-lg my-8">
+                <h3 class="border-b border-dotted p-4 font-bold text-xl">
+                   
+              Question-5: How do you create, add, and remove elements using JavaScript?
+                    </h3>
+                <p class="p-4">ডাইনামিক ভাবে Dom এর মধ্যে Html এলিমেন্ট তৈরি করতে ব্যবহার করা হয় document.createElement()
+                    এবং সেগুলো নিদৃষ্ট এলিমেন্টে এড করার জন্য appendChild() এবং প্যারেন্টে এড করার জন্য append() ইউজ করা হয়। অথবা নিদৃষ্ট কোন এলিমেন্টের পূর্বে এড করার জন্য insertBefore ইউজ করা হয়।
+                    
+                    এবং কোন এলিমেন্ট কে রিমুভ করার জন্য removeChild ইউজ করা হয়</p>
             </div>
         </main>
     </section>
